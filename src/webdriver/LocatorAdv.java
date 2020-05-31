@@ -12,15 +12,16 @@ public class LocatorAdv {
 		
 		WebDriver driver = new FirefoxDriver();
 		
+		System.out.println("launching browser");
 		driver.get("https://www.google.com");
 		
-		System.out.println("launching browser");
+		
 		driver.manage().window().maximize();
 		
 		//By CSS
 		//tagname.className
 		
-		driver.findElement(By.cssSelector("input.gsfi")).sendKeys("Selenium");
+		driver.findElement(By.cssSelector("input.gsfi")).sendKeys("Rest API");
 		driver.findElement(By.cssSelector("input.gsfi")).sendKeys("testing");
 		
 		//tagname#id
