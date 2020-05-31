@@ -1,5 +1,6 @@
 package webdriver;
 
+import org.apache.poi.util.SystemOutLogger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -13,12 +14,14 @@ public class LocatorAdv {
 		
 		driver.get("https://www.google.com");
 		
+		System.out.println("launching browser");
 		driver.manage().window().maximize();
 		
 		//By CSS
 		//tagname.className
 		
 		driver.findElement(By.cssSelector("input.gsfi")).sendKeys("Selenium");
+		driver.findElement(By.cssSelector("input.gsfi")).sendKeys("testing");
 		
 		//tagname#id
 		driver.findElement(By.cssSelector("input#lst-ib")).sendKeys(" Books");
