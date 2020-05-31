@@ -1,0 +1,9 @@
+<suite name = "Parameters">
+	<parameter name ="un" value ="admin"/>
+	<parameter name ="pwd" value ="admin"/>
+	<test name ="ParamTest" verbose="4">
+		<classes>
+			<class name = "testng.ParamTest"/>
+		</classes>
+	</test>
+</suite>

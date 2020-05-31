@@ -1,0 +1,13 @@
+
+<suite name="Groups">
+  <test name="My Groups">
+  	<groups>
+  		<run>
+  		<include name="TOP"/>
+  		</run>
+  	</groups>
+  	<classes>
+  		<class name="testng.LinkTest"/>
+  	</classes>
+   </test> <!-- Default test -->
+</suite> <!-- Default suite -->
